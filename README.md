@@ -8,7 +8,7 @@ MVC全名是Model View Controller，是 **<font color=red>模型(model)</font>**
 ### Model 
 node提供的模块,中间件,在用express创建项目时,产生node_modules即表示M层,即Model
 模块如jade,mongoose,morgan,body-parser等等   
-在这里使用sequelize链接数据库。
+在这里使用sequelize操作数据库。
 ### View 
 express生成项目时会产生views,即前端
 ### Controller 
