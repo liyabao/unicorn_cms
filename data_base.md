@@ -10,17 +10,14 @@
 | updated_at | date   | 更新时间 |
 | deleted_at | date   | 删除时间 |
 
-##`role` 权限信息表
-| 字段名称       | 字段类型   | 字段含义 |
-| ---------- | ------ | ---- |
-| user_id    | int    | 用户id |
-| node       | string | 权限   |
-| created_at | date   | 创建时间 |
-| updated_at | date   | 更新时间 |
-| deleted_at | date   | 删除时间 |
-
-
-
+##`role` 权限信息表  
+| 字段名称| 字段类型   | 字段含义 |  
+| ---------- | ------ | ---- |  
+| user_id    | int    | 用户id |  
+| node       | string | 权限   |  
+| created_at | date   | 创建时间 |  
+| updated_at | date   | 更新时间 |  
+| deleted_at | date   | 删除时间 |  
 
 ##`column`   栏目表  
 
