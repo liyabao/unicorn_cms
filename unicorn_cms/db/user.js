@@ -1,19 +1,17 @@
 'use strict'
-
-var Sequelize=require('sequelize');
-var sequelize=require('../model/connect');
-var user=sequelize.define('user',{
-    id:{type:Sequelize.INTEGER,primaryKey:true},
-    username:{type:Sequelize.STRING},
-    password:{type:Sequelize.STRING},
-    created_at:{type:Sequelize.DATE},
-    updated_at:{type:Sequelize.DATE},
-    deleted_at:{type:Sequelize.DATE}
+var Sequelize = require('sequelize');
+var sequelize = require('../model/connect');
+var user = sequelize.define('user', {
+    id: { type: Sequelize.INTEGER, primaryKey: true,unique:true,autoIncrement:true},
+    username: { type: Sequelize.STRING },
+    password: { type: Sequelize.STRING },
+    
 },
-{
-    freezeTableName:true,
-    // tableName:'user',
-    timestamps:false
-
-})
-module.exports=user;
+    {
+        freezeTableName: true,
+        timestamps: true,
+        // tableName:'user',
+        paranoid: true, //使用逻辑删除，调用destroy()时设置一个deletedAt列
+        underscored:true
+    })
+module.exports = user;
